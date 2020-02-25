@@ -28,6 +28,13 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+        $('a[href$=".pdf"]')
+        .attr('download', '')
+        .attr('target', '_blank'); 
+        });
+    </script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 <div id="main-wrapper">
@@ -80,9 +87,12 @@
                     range businesses to provide data capabilities, scripting, automation and (smallish) webapps.
                     I have dabbled in pretty much all of the aspects of software development
                     and am equally bad at front end, back end and date extraction
-                    So far i have learnt and forgotten languages like BASIC, C, C++ and Java.
-                    If you still want to take a look at my CV,
-                    my contact information should be somewhere at the bottom of this page.
+                    So far i have learnt and forgotten languages like BASIC, C, C++ and Java
+                </p>
+                <p>
+                    If you want to skim through my CV, you should be able to download it
+                    by clicking <a href="resources/utsav-banerjee-cv.pdf" target="_blank" download>here</a>
+                    and if that does not work then my contact information is somewhere at the bottom of this page
                 </p>
 
                 <p>Shoutout to 
