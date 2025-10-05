@@ -37,8 +37,10 @@
     .title { color: var(--muted); font-weight: 400; font-size: 15px; }
 
     .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:2px; }
-    .chip { background: var(--chip); border:1px solid var(--border); padding:6px 10px; border-radius:10px; font-size:13px; color:var(--text); overflow-wrap: anywhere; word-break: break-word; }
-    @media (max-width: 420px){ .chip { display:block; width:100%; text-align:left; } }
+    .chip { background: var(--chip); border:1px solid var(--border); padding:6px 10px; border-radius:10px; font-size:13px; color:var(--text);
+      display: inline-block; max-width: 100%; overflow-wrap: anywhere; }
+    .chips { align-items: flex-start; }
+     }
 
     .tools { width: 100%; display: flex; justify-content: flex-end; }
     @media (min-width: 780px){ .tools { width:auto; margin-left: auto; } }
